@@ -4,38 +4,6 @@
 		<meta charset="UTF-8">
 		<title>有句话对你说</title>
 	</head>
-	
-<script>
-            var a_idx = 0;
-            jQuery(document).ready(function ($) {
-                $("body").click(function (e) {
-                    var a = new Array("❤不知道写什么❤", "❤头发不保❤", "❤emmmm❤", "❤太难辽❤");
-                    var $i = $("<span></span>").text(a[a_idx]);
-                    a_idx = (a_idx + 1) % a.length;
-                    var x = e.pageX,
-                        y = e.pageY;
-                    $i.css({
-                        "z-index": 99,
-                        "top": y - 20,
-                        "left": x,
-                        "position": "absolute",
-                        "font-weight": "bold",
-                        "color": "rgb(" + ~~(255 * Math.random()) + "," + ~~(
-                                255 * Math.random()) + "," + ~~(255 * Math.random()) +
-                            ")"
-                    });
-                    $("body").append($i);
-                    $i.animate({
-                            "top": y - 180,
-                            "opacity": 0
-                        },
-                        1500,
-                        function () {
-                            $i.remove();
-                        });
-                });
-            });
-        </script>
 	<body>
 		<h1>你就是个傻逼,看见神奇的东西就点，真可爱</h1>
 	</body>
